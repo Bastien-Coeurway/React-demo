@@ -55,8 +55,8 @@ export async function getServerSideProps(context) {
   const req = context.req;
   const res = context.res;
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const supabaseUrl = "https://nqiqbrbppsxdqttqsyrj.supabase.co"//process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5xaXFicmJwcHN4ZHF0dHFzeXJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzAyMDU0NjMsImV4cCI6MTk4NTc4MTQ2M30.61V08-OYtV5MjxP3_8gMEFWFOrZhgnjgTbE3Ca8Dr7k"//process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
